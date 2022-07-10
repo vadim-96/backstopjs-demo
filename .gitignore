@@ -1,0 +1,58 @@
+# configuration
+.rbenv-vars
+config/deploy.yml
+config/jivosite.yml
+config/onesignal.yml
+config/nginx/**/*
+!config/nginx/**/*.example*
+
+# extra
+extra/
+
+# temp
+log/
+tmp/
+public/files
+public/test_mailer_reports
+*.bak
+.test.*
+*~
+
+# dumps
+db/dumps/*
+
+# translations
+locales/translations/
+public/img/localized/**/*
+!public/img/localized/en
+!public/img/localized/en/*
+public/documents/**/*
+!public/documents/en
+!public/documents/en/*
+!public/documents/carrier_application_agreement_eu.pdf
+
+# frontend
+npm-debug.log
+node_modules/
+package-lock.json
+assets/graphics/fontello/output/css/*
+!assets/graphics/fontello/output/css/fontello.css
+
+# IDE
+.vscode/
+.idea/
+
+# public
+public/css/
+public/js/
+public/static/js/
+public/fontello/
+public/img/svg/
+
+/docker/volumes
+
+bitmaps/bitmaps_reference/*
+bitmaps/bitmaps_test/*
+reports/ci_report/*
+reports/html_report/*
+reports/json_report/*

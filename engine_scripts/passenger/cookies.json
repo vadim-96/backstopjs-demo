@@ -1,0 +1,9 @@
+[
+  {
+    "name": "rack.session",
+    "value": "9c137845fb858336975aea4a00f86fc5fd188448b0de3768ea5792a6c711b74e",
+    "domain": "example.org",
+    "httpOnly": true,
+    "hostOnly": true
+  }
+]

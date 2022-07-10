@@ -1,0 +1,21 @@
+{
+    "name": "snapshot-project",
+    "version": "1.0.0",
+    "description": "Demo snapshot project",
+    "main": "./backstop_runners/all.js",
+    "scripts": {
+        "backstop:reference": "func() { node ./node_modules/backstopjs/cli/index.js reference --configPath=./backstop_runners/all.js --filter=$1; }; func",
+        "backstop:test": "func() { node ./node_modules/backstopjs/cli/index.js test --configPath=./backstop_runners/all.js --filter=$1; }; func",
+        "backstop:approve": "func() { node ./node_modules/backstopjs/cli/index.js approve --configPath=./backstop_runners/all.js --filter=$1; }; func",
+        "backstop:report": "node ./node_modules/backstopjs/cli/index.js openReport --configPath=./backstop_runners/settings.js"
+    },
+    "dependencies": {
+        "backstopjs": "^4.4.2"
+    },
+    "devDependencies": {
+        "babel-eslint": "^10.0.3",
+        "eslint": "^6.8.0"
+    },
+    "author": "Vadim",
+    "license": "ISC"
+}
